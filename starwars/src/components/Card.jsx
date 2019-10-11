@@ -14,6 +14,33 @@ import eight from './img/8.jpg';
 import nine from './img/9.jpg';
 import ten from './img/10.jpg';
 
+
+const StyledContainer = styled.div`
+    width: 300px;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #997300;
+    color: white;
+    margin: 3rem;
+    box-shadow: 0 0 5px black;
+`;
+
+const StyledImg = styled.img`
+  width: 100%;
+  box-shadow: 0 0 5px black;
+`;
+
+const StyledH2 = styled.h2`
+  text-shadow: 2px 2px black;
+`;
+
+const StyledH4 = styled.h4`
+  text-shadow: 2px 2px black;
+`;
+
 const Card = ( props ) => {
 
   let source;
@@ -55,11 +82,11 @@ const Card = ( props ) => {
   }
   
   return (
-    <div>
-        <img alt={props.name} src={source} />
-        <h2>{props.person.name}</h2>
-        <h4>{props.person.gender}</h4>
-    </div>
+    <StyledContainer>
+        <StyledImg alt={props.name} src={source} />
+        <StyledH2>{props.person.name}</StyledH2>
+        <StyledH4>{props.person.gender}</StyledH4>
+    </StyledContainer>
   );
 };
 

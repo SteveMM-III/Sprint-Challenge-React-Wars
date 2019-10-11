@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import styled from 'styled-components';
 
 import Card from './Card';
 
+const StyledContainer = styled.div`
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+`;
 
 const CardCreator = () => {
 
@@ -11,7 +18,6 @@ const CardCreator = () => {
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
       .then(response => { 
-        // console.log(response.data.results);
         setInfo(response.data.results); 
       })
       .catch(err => {
@@ -20,13 +26,13 @@ const CardCreator = () => {
   }, []);
 
   return (
-    <div>
+    <StyledContainer>
       {
         info.map((person, index) => (
           <Card key={index} index={index} person={person} />
         ))
       }
-    </div>
+    </StyledContainer>
   );
 };
 

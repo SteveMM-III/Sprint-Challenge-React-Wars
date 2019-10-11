@@ -3,14 +3,17 @@ import styled from 'styled-components';
 
 import CardCreator from './CardCreator';
 
+const StyledContainer = styled.div`
+  margin: 0;
+  padding: 3rem;
+`;
 
 const CardContainer = () => {
 
-
   return (
-    <div>
+    <StyledContainer>
       <CardCreator />
-    </div>
+    </StyledContainer>
   );
 };
 
