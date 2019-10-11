@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-import axios from 'axios';
 
 // Photos
 import one from './img/1.jpg';
