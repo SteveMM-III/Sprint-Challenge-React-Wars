@@ -30,7 +30,7 @@ const StyledContainer = styled.div`
 
 const StyledImg = styled.img`
   width: 100%;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 8px yellow;
 `;
 
 const StyledH2 = styled.h2`
@@ -39,6 +39,7 @@ const StyledH2 = styled.h2`
 
 const StyledH4 = styled.h4`
   text-shadow: 2px 2px black;
+  margin-bottom: 0;
 `;
 
 //================ Card ================
