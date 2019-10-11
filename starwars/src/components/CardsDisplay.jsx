@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
   padding: 3rem;
 `;
 
-const CardContainer = () => {
+const CardsDisplay = () => {
 
   return (
     <StyledContainer>
@@ -17,4 +17,4 @@ const CardContainer = () => {
   );
 };
 
-export default CardContainer;
+export default CardsDisplay;
