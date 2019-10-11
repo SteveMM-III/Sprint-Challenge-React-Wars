@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Card from './Card';
 
+// Styles
 const StyledContainer = styled.div`
   margin: 0;
   padding: 0;
@@ -11,10 +12,12 @@ const StyledContainer = styled.div`
   flex-flow: row wrap;
 `;
 
+//================ CardCreator ================
 const CardCreator = () => {
 
   const [info, setInfo] = useState([]);
 
+  // get the data and assign it to info
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
       .then(response => {
@@ -27,7 +30,7 @@ const CardCreator = () => {
 
   return (
     <StyledContainer>
-      {
+      { //  map through array creating cards for each person
         info.map((person, index) => (
           <Card key={index} index={index} person={person} />
         ))

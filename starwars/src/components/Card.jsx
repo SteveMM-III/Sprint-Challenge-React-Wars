@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import axios from 'axios';
 
-// photos
+// Photos
 import one from './img/1.jpg';
 import two from './img/2.jpg';
 import three from './img/3.jpg';
@@ -14,7 +14,7 @@ import eight from './img/8.jpg';
 import nine from './img/9.jpg';
 import ten from './img/10.jpg';
 
-
+// Styling
 const StyledContainer = styled.div`
     width: 300px;
     height: 100%;
@@ -41,8 +41,10 @@ const StyledH4 = styled.h4`
   text-shadow: 2px 2px black;
 `;
 
+//================ Card ================
 const Card = (props) => {
 
+  // section could be cleaner by moving the imports into an array
   let source;
 
   switch (props.index) {
@@ -83,7 +85,7 @@ const Card = (props) => {
 
   return (
     <StyledContainer>
-      <StyledImg alt={props.name} src={source} />
+      <StyledImg alt={props.person.name} src={source} />
       <StyledH2>{props.person.name}</StyledH2>
       <StyledH4>{props.person.gender}</StyledH4>
     </StyledContainer>
