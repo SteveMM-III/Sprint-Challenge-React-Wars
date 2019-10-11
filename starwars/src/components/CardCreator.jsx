@@ -17,8 +17,8 @@ const CardCreator = () => {
 
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
-      .then(response => { 
-        setInfo(response.data.results); 
+      .then(response => {
+        setInfo(response.data.results);
       })
       .catch(err => {
         console.log('Error: ', err);

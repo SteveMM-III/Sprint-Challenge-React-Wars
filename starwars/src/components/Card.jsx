@@ -41,10 +41,10 @@ const StyledH4 = styled.h4`
   text-shadow: 2px 2px black;
 `;
 
-const Card = ( props ) => {
+const Card = (props) => {
 
   let source;
-  
+
   switch (props.index) {
     case 0:
       source = one;
@@ -80,12 +80,12 @@ const Card = ( props ) => {
       source = '';
       break;
   }
-  
+
   return (
     <StyledContainer>
-        <StyledImg alt={props.name} src={source} />
-        <StyledH2>{props.person.name}</StyledH2>
-        <StyledH4>{props.person.gender}</StyledH4>
+      <StyledImg alt={props.name} src={source} />
+      <StyledH2>{props.person.name}</StyledH2>
+      <StyledH4>{props.person.gender}</StyledH4>
     </StyledContainer>
   );
 };
