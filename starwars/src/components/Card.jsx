@@ -35,11 +35,12 @@ const StyledImg = styled.img`
 
 const StyledH2 = styled.h2`
   text-shadow: 2px 2px black;
+  margin-bottom: 0.5rem;
 `;
 
 const StyledH4 = styled.h4`
   text-shadow: 2px 2px black;
-  margin-bottom: 0;
+  margin: 0;
 `;
 
 //================ Card ================
