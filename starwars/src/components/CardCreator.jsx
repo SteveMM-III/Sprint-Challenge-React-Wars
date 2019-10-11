@@ -10,6 +10,7 @@ const StyledContainer = styled.div`
   padding: 0;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
 `;
 
 //================ CardCreator ================
