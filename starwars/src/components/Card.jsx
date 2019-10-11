@@ -3,54 +3,51 @@ import styled from 'styled-components';
 import axios from 'axios';
 
 // photos
-import first from './img/1.jpg';
-import second from './img/2.jpg';
-import third from './img/3.jpg';
-import fourth from './img/4.jpg';
-import fifth from './img/5.jpg';
-import sixth from './img/6.jpg';
-import seventh from './img/7.jpg';
-import eighth from './img/8.jpg';
-import ninth from './img/9.jpg';
-import tenth from './img/10.jpg';
+import one from './img/1.jpg';
+import two from './img/2.jpg';
+import three from './img/3.jpg';
+import four from './img/4.jpg';
+import five from './img/5.jpg';
+import six from './img/6.jpg';
+import seven from './img/7.jpg';
+import eight from './img/8.jpg';
+import nine from './img/9.jpg';
+import ten from './img/10.jpg';
 
 const Card = ( props ) => {
-//name
-//gender
-//img
 
   let source;
   
   switch (props.index) {
     case 0:
-      source = first;
+      source = one;
       break;
     case 1:
-      source = second;
+      source = two;
       break;
     case 2:
-      source = third;
+      source = three;
       break;
     case 3:
-      source = fourth;
+      source = four;
       break;
     case 4:
-      source = fifth;
+      source = five;
       break;
     case 5:
-      source = sixth;
+      source = six;
       break;
     case 6:
-      source = seventh;
+      source = seven;
       break;
     case 7:
-      source = eighth;
+      source = eight;
       break;
     case 8:
-      source = ninth;
+      source = nine;
       break;
     case 9:
-      source = tenth;
+      source = ten;
       break;
     default:
       source = '';
