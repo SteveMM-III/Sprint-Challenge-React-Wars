@@ -7,7 +7,7 @@ import Card from './Card';
 // Styles
 const StyledContainer = styled.div`
   margin: 0;
-  padding: 0;
+  padding: 3rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
