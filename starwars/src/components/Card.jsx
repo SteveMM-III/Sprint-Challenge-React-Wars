@@ -45,48 +45,23 @@ const StyledH4 = styled.h4`
 //================ Card ================
 const Card = (props) => {
 
-  // section could be cleaner by moving the imports into an array
-  let source;
+  // array to hold the image paths
+  const source = [];
 
-  switch (props.index) {
-    case 0:
-      source = one;
-      break;
-    case 1:
-      source = two;
-      break;
-    case 2:
-      source = three;
-      break;
-    case 3:
-      source = four;
-      break;
-    case 4:
-      source = five;
-      break;
-    case 5:
-      source = six;
-      break;
-    case 6:
-      source = seven;
-      break;
-    case 7:
-      source = eight;
-      break;
-    case 8:
-      source = nine;
-      break;
-    case 9:
-      source = ten;
-      break;
-    default:
-      source = '';
-      break;
-  }
+  source.push(one);
+  source.push(two);
+  source.push(three);
+  source.push(four);
+  source.push(five);
+  source.push(six);
+  source.push(seven);
+  source.push(eight);
+  source.push(nine);
+  source.push(ten);
 
   return (
     <StyledContainer>
-      <StyledImg alt={props.person.name} src={source} />
+      <StyledImg alt={props.person.name} src={source[props.index]} />
       <StyledH2>{props.person.name}</StyledH2>
       <StyledH4>{props.person.gender}</StyledH4>
     </StyledContainer>
